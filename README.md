@@ -68,7 +68,7 @@ You have now enabled the Camera module and SSH on your Raspberry Pi.
 
 ### Installing the Motion Sensor
 
-The next step is to wire the Raspberry Pi to a motion sensor, for which this example I've used an HC-SR501 PIR motion sensor. 
+The next step is to wire the Raspberry Pi to a motion sensor, for which this example I've used an HC-SR501 PIR motion sensor.
 
 First, take the sensor and connect three wires to it. I've used red for the live, blue for the GPIO, and black for the ground. For the sensor in this example, the first pin is ground, second GPIO and third live as shown below:
 
@@ -78,7 +78,7 @@ A great example to describe each of the pins of the Raspberry Pi is on [The Rasp
 
 ![GPIO Pinout Diagram][gpio-pinout]
 
-The final part is connecting the wires to the Raspberry Pi. The live (red) wire needs to be connected to one of the `5V power` pins on the Pi, referring to the diagram above I used pin 2. The ground (black) wire needs to be connected to one of the `GND` pins on the Pi, again referring to the diagram I used pin 6. The final wire to connect is the GPIO (blue) wire, which needs to connect to one of the `GPIO` pins. In this example, I used pin 12, labelled "GPIO 18". 
+The final part is connecting the wires to the Raspberry Pi. The live (red) wire needs to be connected to one of the `5V power` pins on the Pi, referring to the diagram above I used pin 2. The ground (black) wire needs to be connected to one of the `GND` pins on the Pi, again referring to the diagram I used pin 6. The final wire to connect is the GPIO (blue) wire, which needs to connect to one of the `GPIO` pins. In this example, I used pin 12, labelled "GPIO 18".
 
 You will see the wires wired up, as shown below:
 
@@ -115,7 +115,7 @@ nexmo setup <your_api_key> <your_api_secret>
 
 ### Git (Optional)
 
-You can use git to clone the [demo application](https://github.com/GregHolmes/pi-cam) from GitHub.
+You can use git to clone the [demo application](https://github.com/nexmo-community/home-surveillance-with-node-and-raspberry-pi) from GitHub.
 
 > For those uncomfortable with git commands, don't worry, I've you covered.
 
@@ -154,12 +154,12 @@ Your database is now set up!
 
 ### This Demo Application
 
-Clone or download the demo application. To download, [go to the repository](https://github.com/GregHolmes/pi-cam) and click on the *Clone or download* button on GitHub.
+Clone or download the demo application. To download, [go to the repository](https://github.com/nexmo-community/home-surveillance-with-node-and-raspberry-pi) and click on the *Clone or download* button on GitHub.
 
 > ***Note:*** If you download, make sure you're on the right version number before downloading.
 
 ```bash
-git clone git@github.com:GregHolmes/home-surveillance-system-with-raspberry-pi.git
+git clone git@github.com:nexmo-community/home-surveillance-with-node-and-raspberry-pi.git
 ```
 
 Once unzipped or cloned, change into the directory.
@@ -211,7 +211,7 @@ nexmo app:create "My Messages App" --capabilities=messages --messages-inbound-ur
 
 ### Store the Credentials in the Environment
 
-Create an account on both: 
+Create an account on both:
 - [Vonage (formally Nexmo)](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=https://github.com/nexmo-community/home-surveillance-with-raspberry-pi)
 - [Vonage Video (formally Tokbox)](https://tokbox.com/account/user/signup?utm_source=DEV_REL&utm_medium=github&utm_campaign=https://github.com/nexmo-community/home-surveillance-with-raspberry-pi)
 
@@ -253,7 +253,7 @@ VIDEO_SESSION_DURATION=
 There are generated migrations within the `migrations/` table. Running the command below creates the specified database tables into the database.
 
 ```
-npx sequelize db:migrate 
+npx sequelize db:migrate
 ```
 
 ### Start the App
@@ -264,7 +264,7 @@ In your Terminal, navigate to the project root directory and type:
 node server.js
 ```
 
-This will run your server monitoring for motion sensor, then proceeding to start a Vonage Video Session, and SMS your specified number with the link to view. 
+This will run your server monitoring for motion sensor, then proceeding to start a Vonage Video Session, and SMS your specified number with the link to view.
 
 ## Code of Conduct
 

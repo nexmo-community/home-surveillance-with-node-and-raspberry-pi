@@ -1,0 +1,8 @@
+.env
+.nexmo-app
+node_modules/
+private.key
+public/config/config.txt
+.DS_Store
+key.pem
+cert.pem

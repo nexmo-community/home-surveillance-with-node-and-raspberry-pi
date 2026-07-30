@@ -16,7 +16,7 @@
     "ngrok": "^3.2.7",
     "onoff": "^5.0.1",
     "opentok": "^2.9.2",
-    "puppeteer": "^2.1.1",
+    "puppeteer": "^3.0.0",
     "sequelize": "^5.21.6"
   },
   "devDependencies": {
